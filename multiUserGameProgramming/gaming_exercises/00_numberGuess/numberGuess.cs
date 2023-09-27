@@ -1,4 +1,4 @@
-// Amarion Burks, Number Guess, v0.3
+// Amarion Burks, Number Guess, v0.4
 
 /* 
 generate random number
@@ -33,8 +33,8 @@ namespace numberGuess
             int rangeMax = 100;
 
 
-            Console.WriteLine("Welcome to the Number Guessing Game! \nPlease select your difficulty");
-            Console.WriteLine("Easy Mode: Range is 0 - 10 with 4 guesses. \nNormal Mode: Range is 0 - 25 with 4 guesses. \nHard Mode: Range is 0 - 50 with  guesses.");
+            Console.WriteLine("Welcome to the Number Guessing Game!");
+            Console.WriteLine("Please select your difficulty\nEasy Mode: Range is 0 - 10 with 4 guesses. \nNormal Mode: Range is 0 - 25 with 4 guesses. \nHard Mode: Range is 0 - 50 with  guesses.");
 
             difficulty = Console.ReadLine();
             Console.WriteLine("You have selected " + difficulty);
@@ -64,27 +64,38 @@ namespace numberGuess
                 rangeMax = 0;
             }
 
-
-
-
-
-
-            if (userInput == curNumber) {
-                Console.WriteLine("You got it right! You earned a point!");
-                playerScore++;
-            } else {
-                cpuScore++;
-                if (numAttempts != numGuesses) {
-                Console.WriteLine("You got it wrong.. You get 2 more tries");
-                if (userInput > curNumber) {
-                    Console.WriteLine("Your guess was too large");
-                } else if (userInput < curNumber) {
-                    Console.WriteLine("Your guess was too small");
+            while (playerScore != 3 && cpuScore != 3) {
+                // Any code to run BEFORE each round goes here
+                Console.WriteLine("Select a number between" + rangeMin + " and " + rangeMax)
+                //START EACH ROUND
+                for (int i = 0; i < numGuesses; i++) {
+                    // Code to guess number goes here
+                    
                 }
-                } else {
-                    Console.WriteLine("You're out of guesses");
-                }
+
             }
+
+
+
+
+
+
+            // if (userInput == curNumber) {
+            //     Console.WriteLine("You got it right! You earned a point!");
+            //     playerScore++;
+            // } else {
+            //     cpuScore++;
+            //     if (numAttempts != numGuesses) {
+            //     Console.WriteLine("You got it wrong.. You get 2 more tries");
+            //     if (userInput > curNumber) {
+            //         Console.WriteLine("Your guess was too large");
+            //     } else if (userInput < curNumber) {
+            //         Console.WriteLine("Your guess was too small");
+            //     }
+            //     } else {
+            //         Console.WriteLine("You're out of guesses");
+            //     }
+            // }
         }
     }
 }
