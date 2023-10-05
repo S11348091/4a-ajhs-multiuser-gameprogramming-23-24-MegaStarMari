@@ -1,12 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//02_Collections, Amarion Burks, v0.1c
+//02_Collections, Amarion Burks, v0.2a
 
 
 using System;
 
-namespace UpdateForEachProgram
+namespace Collections
 {
-    class UpdateForEachProgram
+    class Collections
     {
         static void Main(string[] args)
         {
@@ -44,7 +44,23 @@ namespace UpdateForEachProgram
             Console.WriteLine("GPA: \n" + String.Join(",\n", GPA));
             Console.WriteLine();
 
+            // Determining Array Length
+            Console.WriteLine("The length of each array is:\n");
+            Console.WriteLine("breakfastFoods: " +  breakfastFoods.Length);
+            Console.WriteLine("testScores: " + testScores.Length);
+            Console.WriteLine("GPA: " +  GPA.Length);
 
+            // Accessing Array Elements -- use index
+            Console.WriteLine("The length of each array is:\n");
+            Console.WriteLine("breakfastFoods: " +  breakfastFoods[0]);
+            Console.WriteLine("testScores: " + testScores[0]);
+            Console.WriteLine("GPA: " +  GPA[0]);
+
+            // Access last elements
+            Console.WriteLine("The length of each array is:\n");
+            Console.WriteLine("breakfastFoods: " +  breakfastFoods[breakfastFoods.Length - 1]);
+            Console.WriteLine("testScores: " + testScores[testScores.Length - 1]);
+            Console.WriteLine("GPA: " +  GPA[GPA.Length - 1]);
 
 
         }
