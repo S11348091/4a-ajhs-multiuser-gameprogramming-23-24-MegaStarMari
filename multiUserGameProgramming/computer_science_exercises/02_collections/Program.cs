@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-//02_Collections, Amarion Burks, v0.1b
+//02_Collections, Amarion Burks, v0.1c
 
 
 using System;
@@ -26,6 +26,7 @@ namespace UpdateForEachProgram
             int[] testScores = {95, 100, 25, 15, 27, 35};
             float[] GPA = {3.14f, 2.25f, 1.74f, 1.99f, 0.99f, 4.25f};
 
+            // Print all elements on single line
             Console.WriteLine("The elements for each array are:\n");
             Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
             Console.WriteLine();
@@ -33,6 +34,18 @@ namespace UpdateForEachProgram
             Console.WriteLine();
             Console.WriteLine("GPA: \n" + String.Join(", ", GPA));
             Console.WriteLine();
+
+            // Print each elements on seperate lines
+            Console.WriteLine("The elements for each array are:\n");
+            Console.WriteLine("breakfastFoods: \n" + String.Join(",\n", breakfastFoods));
+            Console.WriteLine();
+            Console.WriteLine("testScore: \n" + String.Join(",\n", testScores));
+            Console.WriteLine();
+            Console.WriteLine("GPA: \n" + String.Join(",\n", GPA));
+            Console.WriteLine();
+
+
+
 
         }
     }
