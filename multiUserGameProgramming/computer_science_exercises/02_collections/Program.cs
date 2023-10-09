@@ -52,15 +52,21 @@ namespace Collections
 
             // Accessing Array Elements -- use index
             Console.WriteLine("The length of each array is:\n");
-            Console.WriteLine("breakfastFoods: " +  breakfastFoods[0]);
+            Console.WriteLine("breakfastFoods: " + breakfastFoods[0]);
             Console.WriteLine("testScores: " + testScores[0]);
-            Console.WriteLine("GPA: " +  GPA[0]);
+            Console.WriteLine("GPA: " + GPA[0]);
 
             // Access last elements
             Console.WriteLine("The length of each array is:\n");
-            Console.WriteLine("breakfastFoods: " +  breakfastFoods[breakfastFoods.Length - 1]);
+            Console.WriteLine("breakfastFoods: " + breakfastFoods[breakfastFoods.Length - 1]);
             Console.WriteLine("testScores: " + testScores[testScores.Length - 1]);
-            Console.WriteLine("GPA: " +  GPA[GPA.Length - 1]);
+            Console.WriteLine("GPA: " + GPA[GPA.Length - 1]);
+
+            // Accessing Array Elements -- use index
+            Console.WriteLine("The length of each array is:\n");
+            Console.WriteLine("breakfastFoods: " + breakfastFoods[0]);
+            Console.WriteLine("testScores: " + testScores[0]);
+            Console.WriteLine("GPA: " + GPA[0]);
 
 
         }
