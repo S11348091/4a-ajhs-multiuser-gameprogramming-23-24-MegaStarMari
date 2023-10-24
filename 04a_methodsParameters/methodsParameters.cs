@@ -1,4 +1,4 @@
-// Amarion Burks, Methods Parameters, v0.1
+// Amarion Burks, Methods Parameters, v0.2
 using System;
 
 namespace MethodsParameters
@@ -36,10 +36,19 @@ namespace MethodsParameters
             return sum;
         }
 
+        static void MakePancakes(int num)
+        {
+            for (int i = 0; i < num; i++) {
+                Console.WriteLine("Your pancake is on the way");
+            }
+        }
+
+
         static void Main(string[] args)
         {
             MyMethod();
             DoubleUp();
+            MakePancakes(1);
         }
     }
 }
