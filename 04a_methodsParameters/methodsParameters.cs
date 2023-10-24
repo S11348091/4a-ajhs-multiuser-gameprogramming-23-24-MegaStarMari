@@ -1,4 +1,4 @@
-// Amarion Burks, Methods Parameters, v0.2
+// Amarion Burks, Methods Parameters, v0.3
 using System;
 
 namespace MethodsParameters
@@ -43,12 +43,18 @@ namespace MethodsParameters
             }
         }
 
+        static void MakeEggs(int num, string style)
+        {
+            Console.WriteLine( num + " eggs cooked " + style + " on the way!");
+        }
+
 
         static void Main(string[] args)
         {
-            MyMethod();
-            DoubleUp();
-            MakePancakes(1);
+            //MyMethod();
+            //DoubleUp();
+            //MakePancakes(1);
+            MakeEggs(3, "scrambled light");
         }
     }
 }
