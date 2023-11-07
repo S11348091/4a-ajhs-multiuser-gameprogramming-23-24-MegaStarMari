@@ -1,4 +1,4 @@
-// Amarion Burks, Methods Parameters, v0.4
+// Amarion Burks, Methods Parameters, v0.5
 using System;
 
 namespace MethodsParameters
@@ -53,14 +53,41 @@ namespace MethodsParameters
             Console.WriteLine("I am going to cook " + num + " hamburgers.\n");
         }
 
+        static void AllMyChildren(string child1, string child2, string child3)
+        {
+            Console.WriteLine("My favorite child is " + child2 + ".\n");
+        }
+
+        // METHOD OVERLOADING
+        // Find sum of integer
+        static int FindSum(int x, int y)
+        {
+            int sum = x + y;
+            Console.WriteLine("Sum: " + sum);
+
+            return sum;
+        }
+        // Find sum of double
+        static double FindSum(double x, double y)
+        {
+            double sum = x + y;
+            Console.WriteLine("Sum: " + sum);
+
+            return sum;
+        }
+
 
         static void Main(string[] args)
         {
-            //MyMethod();
-            //DoubleUp();
-            //MakePancakes(1);
-            //MakeEggs(3, "scrambled light");
-            MakeBurger();
+            // MyMethod();
+            // DoubleUp();
+            // MakePancakes(1);
+            // MakeEggs(3, "scrambled light");
+            // MakeBurger();
+            // AllMyChildren(child2: "X Æ A-Xii", child3: "Sayori", child1: "Malphon");
+            FindSum(2, 5);
+            FindSum(3.14, 4.20);
+            FindSum(7, 6.9);
         }
     }
 }
