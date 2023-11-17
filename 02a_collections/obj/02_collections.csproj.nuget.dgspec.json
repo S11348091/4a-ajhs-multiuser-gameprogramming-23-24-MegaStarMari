@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\s11581055\\Downloads\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\multiUserGameProgramming\\computer_science_exercises\\02_collections\\02_collections.csproj": {}
+    "C:\\Users\\amari\\Documents\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\02a_collections\\02_collections.csproj": {}
   },
   "projects": {
-    "C:\\Users\\s11581055\\Downloads\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\multiUserGameProgramming\\computer_science_exercises\\02_collections\\02_collections.csproj": {
+    "C:\\Users\\amari\\Documents\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\02a_collections\\02_collections.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s11581055\\Downloads\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\multiUserGameProgramming\\computer_science_exercises\\02_collections\\02_collections.csproj",
+        "projectUniqueName": "C:\\Users\\amari\\Documents\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\02a_collections\\02_collections.csproj",
         "projectName": "02_collections",
-        "projectPath": "C:\\Users\\s11581055\\Downloads\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\multiUserGameProgramming\\computer_science_exercises\\02_collections\\02_collections.csproj",
-        "packagesPath": "C:\\Users\\s11581055\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s11581055\\Downloads\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\multiUserGameProgramming\\computer_science_exercises\\02_collections\\obj\\",
+        "projectPath": "C:\\Users\\amari\\Documents\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\02a_collections\\02_collections.csproj",
+        "packagesPath": "C:\\Users\\amari\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amari\\Documents\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\02a_collections\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\s11581055\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\amari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,12 +54,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

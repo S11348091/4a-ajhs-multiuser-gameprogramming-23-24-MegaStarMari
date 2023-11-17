@@ -1,8 +1,33 @@
 {
   "version": 2,
-  "dgSpecHash": "49vgd29vNpINL5Tj7I71E/i0VQl3VO7WNdVlThTzVcuGuaWHsmORaqwCII6LlT4H5hqkEDzpAsmX0gNzKzmziw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\s11581055\\Downloads\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\multiUserGameProgramming\\computer_science_exercises\\02_collections\\02_collections.csproj",
+  "dgSpecHash": "7UrpIFMPGzp5uVgVO40RzNqq7VP0Kavk5HQPPDLw1ALqB0Z8BJg3zlGvMa9aQzRKwwjeLhPJYWJ4pbu6hkwp3w==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\amari\\Documents\\GitHub\\4a-ajhs-multiuser-gameprogramming-23-24-MegaStarMari\\02a_collections\\02_collections.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'D:\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.NETCore.App.Ref"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'D:\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.WindowsDesktop.App.Ref"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'D:\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.AspNetCore.App.Ref"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'D:\\Microsoft Visual Studio\\Shared\\NuGetPackages' doesn't exist.",
+      "libraryId": "Microsoft.NETCore.App.Host.win-x64"
+    }
+  ]
 }
