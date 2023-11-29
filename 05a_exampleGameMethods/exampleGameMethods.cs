@@ -1,4 +1,4 @@
-// Amarion Burks, Example Game Methods, v0.4
+// Amarion Burks, Example Game Methods, v0.5
 using System;
 
 /*
@@ -22,7 +22,7 @@ namespace ExampleGameMethods
 {
     class ExampleGameMethods
     {
-        static void Status(int statusID)
+        static void Status(int statusID, int reqVar = 0)
         {
             // Various lines for different parts of the game
 
@@ -46,7 +46,7 @@ namespace ExampleGameMethods
                 Console.WriteLine("Bonnie has moved.");
             } else if (statusID==5){
                 // Bonnie current room
-                Console.WriteLine("Bonnie is in room " + "");
+                Console.WriteLine("Bonnie is in room " + reqVar);
             }
 
         }
@@ -63,11 +63,11 @@ namespace ExampleGameMethods
             
             // Loop until valid command is entered
             while (checking == true){
-            if (userInput == "close door") {
+            if (userInput == "close door" || userInput == "close") {
                 Console.WriteLine("Door has closed.\n");
                 doorClosed = true;
                 break;
-            } else if (userInput == "open door") {
+            } else if (userInput == "open door" || userInput == "open") {
                 Console.WriteLine("Door has opened.\n");
                 doorClosed = false;
                 break;
@@ -124,13 +124,22 @@ namespace ExampleGameMethods
             int lives = 0;
 
             curSpeed = 0;
-            curRoom = 0;
-            
+            curRoom = 5;
+
+
+
+            //Testing all the methods
             Status(1);
+
+            Console.WriteLine("Rooms:");
+            for (int i = 0; i < ROOMS.Length; i++) {
+                Console.WriteLine(ROOMS[i]);
+            }
+            
             Status(2);
             Status(3);
             Status(4);
-            Status(5);
+            Status(5, curRoom);
 
             Roll();
             Roll(1,100);
@@ -141,6 +150,7 @@ namespace ExampleGameMethods
             Attack(true, true, 4);
             Attack(true, false, 5);
             Attack(false, false, 2);
+            Console.WriteLine("");
 
             Doors();
 
@@ -149,28 +159,30 @@ namespace ExampleGameMethods
 
             //Realized we're just making the methods and not the game itself so canning this section for now (I miss python)
 
-            // Console.WriteLine("Please select a difficulty between 1 - 20");
-            // string userInput = Console.ReadLine();
+            /*
+            Console.WriteLine("Please select a difficulty between 1 - 20");
+            string userInput = Console.ReadLine();
             
-            // // put a while loop here to repeat until proper value chosen
-            // try {
-            //     difficulty = Int32.Parse(userInput);
-            // } catch (Exception e) {
-            //     Console.WriteLine("Non-numerical character detected, try again");
-            // }
-            // Console.WriteLine("You have selected " + difficulty);
+            // put a while loop here to repeat until proper value chosen
+            try {
+                difficulty = Int32.Parse(userInput);
+            } catch (Exception e) {
+                Console.WriteLine("Non-numerical character detected, try again");
+            }
+            Console.WriteLine("You have selected " + difficulty);
 
-            // if (difficulty > 20) {
-            //     Console.WriteLine(difficulty + " is above the max difficulty of 20, setting difficulty to 20");
-            //     difficulty = 20;
-            // } else if (difficulty <= 20) {
-            //     if (difficulty >= 0) {
-            //         Console.WriteLine("Valid value");
-            //     }
-            // } else {
-            //     Console.WriteLine("No value detected, setting difficulty to 10");
-            //     difficulty = 10;
-            // }
+            if (difficulty > 20) {
+                Console.WriteLine(difficulty + " is above the max difficulty of 20, setting difficulty to 20");
+                difficulty = 20;
+            } else if (difficulty <= 20) {
+                if (difficulty >= 0) {
+                    Console.WriteLine("Valid value");
+                }
+            } else {
+                Console.WriteLine("No value detected, setting difficulty to 10");
+                difficulty = 10;
+            }
+            */
 
 
             
