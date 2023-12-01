@@ -142,7 +142,7 @@ namespace ExampleGameMethods
             Status(5, curRoom);
 
             Roll();
-            Roll(1,100);
+            Roll(0,1);
             Roll(1900,2000);
 
             Attack(true, Doors(), 3);
@@ -191,3 +191,6 @@ namespace ExampleGameMethods
 }
 
 // Amaure Cooper Code review
+/*
+I ran the code, there was zero errors
+*/
